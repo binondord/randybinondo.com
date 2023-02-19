@@ -37,7 +37,7 @@ export default function MyInterests() {
                     <div className="flex items-center">
                       <div>
                         <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3">
-                          <i class="text-blueGray-400 fab fa-facebook text-lg leading-lg "></i>
+                          <i className="text-blueGray-400 fab fa-facebook text-lg leading-lg "></i>
                         </span>
                       </div>
                       <div>
@@ -51,7 +51,7 @@ export default function MyInterests() {
                     <div className="flex items-center">
                       <div>
                         <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3">
-                          <i class="text-blueGray-400 fab fa-github text-lg leading-lg "></i>
+                          <i className="text-blueGray-400 fab fa-github text-lg leading-lg "></i>
                         </span>
                       </div>
                       <div>

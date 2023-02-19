@@ -2,8 +2,6 @@ import React from "react";
 import Link from "next/link";
 // components
 
-import IndexDropdown from "@/components/Dropdowns/IndexDropdown.js";
-
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
@@ -39,7 +37,6 @@ export default function Navbar(props) {
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://www.linkedin.com/in/randy-binondo/"
-                  target="_blank"
                 >
                   <i className="text-blueGray-400 fab fa-linkedin text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Link</span>
@@ -49,7 +46,6 @@ export default function Navbar(props) {
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://www.facebook.com/randybinondo.page"
-                  target="_blank"
                 >
                   <i className="text-blueGray-400 fab fa-facebook text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Follow</span>
@@ -60,7 +56,6 @@ export default function Navbar(props) {
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://twitter.com/randybinondo"
-                  target="_blank"
                 >
                   <i className="text-blueGray-400 fab fa-twitter text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Tweet</span>
@@ -71,7 +66,6 @@ export default function Navbar(props) {
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://github.com/binondord"
-                  target="_blank"
                 >
                   <i className="text-blueGray-400 fab fa-github text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Star</span>
