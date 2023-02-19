@@ -23,8 +23,8 @@ export default function Index() {
       <SectionThree/>
       <SectionFour/>*/}
       
-      <WhiteSection/>
-      <Contact/>
+      {/*<WhiteSection/>
+      <Contact/>*/}
       <Footer />
 
       

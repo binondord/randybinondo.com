@@ -35,13 +35,13 @@ const Contact = () => {
                   Need help?
                 </h2>
                 <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-400">
-                  You may reach me through my social media accounts <br/> or through the form below.
+                  You may reach me through my social media accounts
                 </p>
               </div>
             </div>
           </div>
         </section>
-        <section className="relative block py-24 lg:pt-0 bg-blueGray-800">
+        {/*<section className="relative block py-24 lg:pt-0 bg-blueGray-800">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
               <div className="w-full lg:w-6/12 px-4">
@@ -109,7 +109,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section>*/}
         </>
     );
 }
