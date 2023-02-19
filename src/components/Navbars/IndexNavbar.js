@@ -35,6 +35,16 @@ export default function Navbar(props) {
             id="example-navbar-warning"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li className="flex items-center">
+                <a
+                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  href="https://www.linkedin.com/in/randy-binondo/"
+                  target="_blank"
+                >
+                  <i className="text-blueGray-400 fab fa-linkedin text-lg leading-lg " />
+                  <span className="lg:hidden inline-block ml-2">Link</span>
+                </a>
+              </li>
               <li className="flex items-center">
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
