@@ -71,6 +71,16 @@ export default function Navbar(props) {
                   <span className="lg:hidden inline-block ml-2">Star</span>
                 </a>
               </li>
+
+              <li className="flex items-center">
+                <a
+                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  href="https://www.youtube.com/vhyeinouondz"
+                >
+                  <i className="text-blueGray-400 fab fa-youtube text-lg leading-lg " />
+                  <span className="lg:hidden inline-block ml-2">Subscribe</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
