@@ -60,7 +60,7 @@ const RandyAndSkills = () => {
                   <span className="inline md:block">Welcome.</span>
               </h1>
               <div className="flex flex-wrap">
-                <h1 className="text-4xl font-semibold leading-normal py-4">Get free coding exercises here. </h1>
+                <h1 className="text-4xl font-semibold leading-normal py-4">Tech stacks: </h1>
                 <CardSkillsCloud/>
               </div>
             </div>
