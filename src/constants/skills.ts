@@ -82,5 +82,6 @@ export const technologies = [
     {value: "CSS", label: "CSS"},
     {value: "SaaS", label: "SaaS"},
     {value: "Bootstrap", label: "Bootstrap"},
-    {value: "Android", label: "Android"},
+    {value: "Serverless", label: "Serverless"},
+    {value: "ECS", label: "ECS"},
 ];
