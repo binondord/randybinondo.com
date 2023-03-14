@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import randy from '@/assets/img/randybinondo.png'
 import CardSkillsCloud from "@/components/Cards/CardSkillsCloud.js";
+import Profile from "@/components/Profile";
 
 const RandyAndSkills = () => {
     return (
@@ -11,9 +12,9 @@ const RandyAndSkills = () => {
         </div>
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center">
-          
-
-            <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto">
+            <Profile/>
+            {/*<div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto">
+              
               <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
                 <Image
                   className="w-full align-middle rounded-t-lg"
@@ -53,7 +54,7 @@ const RandyAndSkills = () => {
                   </div>
                 </blockquote>
               </div>
-            </div>
+    </div>*/}
 
             <div className="w-full md:w-6/12 px-4">
                 <h1 className="text-5xl font-extrabold leading-10 tracking-tight text-left text-gray-900 md:text-center sm:leading-none md:text-6xl lg:text-7xl">

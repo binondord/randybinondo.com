@@ -4,6 +4,8 @@ import IndexNavbar from "@/components/Navbars/IndexNavbar.js";
 import Footer from "@/components/Footers/Footer.js";
 import RandyAndSkills from "@/components/IndexSections/RandyAndSkills";
 import MyInterests from "@/components/IndexSections/MyInterests";
+import Profile from "@/components/Profile";
+import LoginBtn from "@/components/LoginBtn";
 
 export default function Index() {
   return (
@@ -12,6 +14,7 @@ export default function Index() {
       <RandyAndSkills/>
       
       <MyInterests/>
+      <LoginBtn/>
       <Footer />
 
       
