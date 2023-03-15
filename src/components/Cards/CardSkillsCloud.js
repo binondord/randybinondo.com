@@ -22,7 +22,11 @@ export default function CardSkillsCloud({ color }) {
         <div className="block w-full overflow-x-auto">
           <ul className="flex justify-center flex-wrap max-w-xl align-center gap-2 leading-8">
             {technologies.map((technology, index) => (
-              <li key={index}><Link href={`#`+technology.value} className={getClass() + ' '+ getColor()}>{technology.label}</Link></li>
+              <li key={index}>
+                <Link href={`#`+technology.value} className={getClass() + ' '+ getColor()}>
+                  {technology.label}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>

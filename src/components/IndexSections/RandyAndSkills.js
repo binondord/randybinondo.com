@@ -1,6 +1,3 @@
-import Image from 'next/image'
-
-import randy from '@/assets/img/randybinondo.png'
 import CardSkillsCloud from "@/components/Cards/CardSkillsCloud.js";
 import Profile from "@/components/Profile";
 

@@ -1,13 +1,14 @@
 import Image from 'next/image'
-import wejustdevelop from '@/assets/img/wejustdevelop.png'
-import wejustdevelopteam from '@/assets/img/wejustdevelop.jpeg'
-export default function MyInterests() {
+import wejustdevelop from '/public/wejustdevelop.png'
+import wejustdevelopteam from '/public/wejustdevelop.jpeg'
+export default function MyInterests({showSvgPolygon}) {
     return (
         <section className="relative py-20">
         <div
           className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
           style={{ transform: "translateZ(0)" }}
         >
+          {showSvgPolygon ?
           <svg
             className="absolute bottom-0 overflow-hidden"
             xmlns="http://www.w3.org/2000/svg"
@@ -22,6 +23,7 @@ export default function MyInterests() {
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>
+          : (<></>) }
         </div>
 
         <div className="container mx-auto px-4">
@@ -71,7 +73,7 @@ export default function MyInterests() {
                   alt="We just develop"
                   width={332}
                   height={332}
-                  />
+              />
             </div>
           </div>
         </div>
@@ -88,7 +90,7 @@ export default function MyInterests() {
               alt="We just develop"
               width={332}
               height={332}
-              />
+            />
           </div>
         </div>
       </section>

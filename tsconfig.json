@@ -16,9 +16,14 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/pages/*": ["./src/pages/*"],
+      "@/constants/*": ["./src/constants/*"],
+      "@/assets/*": ["./src/assets/*"],
+      "/public/*": ["./public/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "__mocks__/next/image.js", "src/components/__tests__/Sample.test.jsx"],
   "exclude": ["node_modules"]
 }

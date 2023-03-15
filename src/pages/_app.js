@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "next/app";
 import Head from "next/head";
 import Router from "next/router";
@@ -10,15 +11,17 @@ import PageChange from "@/components/PageChange/PageChange.js";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@/styles/tailwind.css";
 
-
-
 Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);
   document.body.classList.add("body-page-transition");
-  ReactDOM.render(
+  /*
+  const root = createRoot(document.getElementById("page-transition"));
+  root.render(<PageChange path={url} />);
+  */
+  /*ReactDOM.render(
     <PageChange path={url} />,
     document.getElementById("page-transition")
-  );
+  );*/
 });
 Router.events.on("routeChangeComplete", () => {
   ReactDOM.unmountComponentAtNode(document.getElementById("page-transition"));
@@ -47,7 +50,6 @@ export default class MyApp extends App {
     const { Component, pageProps: { session, ...pageProps } } = this.props;
 
     const Layout = Component.layout || (({ children }) => <>{children}</>);
-
     return (
       <React.Fragment>
         <Head>
@@ -60,11 +62,12 @@ export default class MyApp extends App {
           {/*<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>*/}
           
         </Head>
-        <Layout>
-          <SessionProvider session={session}>
-            <Component {...pageProps} />
-          </SessionProvider>
-        </Layout>
+        
+          <Layout>
+            <SessionProvider session={session}>
+              <Component {...pageProps} />
+            </SessionProvider>
+          </Layout>
       </React.Fragment>
     );
   }
