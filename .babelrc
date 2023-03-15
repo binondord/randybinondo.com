@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    [
+      "@babel/preset-react"
+    ]
+  ],
+  "plugins": [
+    "babel-plugin-styled-components",
+    "@babel/plugin-syntax-dynamic-import",
+    ["styled-components", { "ssr": true }]
+  ],
+
+  "env": {
+    "test": {
+      "plugins": ["dynamic-import-node"]
+    }
+  }
+}
